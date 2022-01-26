@@ -1,0 +1,35 @@
+section.repository-list {
+    margin: 40px;
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+           // margin-bottom: 20px;
+            // &:last-child {
+              //   margin: 0; tira a margin do ultimo 'li'
+            }
+            & + li {
+                margin-top: 20px; // conta a partir da segunda 'li'
+            }
+
+            p {
+                font-size: 14px;
+                margin-top: 8px;
+                color: #444;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 16px;
+                text-decoration: none;
+                color: #57e6;
+                
+            }
+
+        }
+    }
